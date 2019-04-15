@@ -1,0 +1,23 @@
+// ONE FILE TO RULE THEM ALL
+@charset 'utf-8';
+
+/*
+  Theme Name: Yperion
+  Theme URI:
+  Descritpion : Theme pour site.
+  Version: 1.0
+  Author: ETSL - laurent Vermeille
+*/
+// MES VARIABLES
+@import 'abstracts/mes-variables';
+// BOOTSTRAP
+@import 'vendors/bootstrap-4.3.1/bootstrap';
+// mettre true dans variables ligne 119
+@import 'vendors/bootstrap-4.3.1/vendor/rfs';
+
+// LAYOUT
+@import 'layout/layout-header.scss';                // header
+@import 'layout/layout-main.scss';                  // main
+
+// COMPONENETS
+@import 'components/widgets/widget-pages';          // widget pages 
