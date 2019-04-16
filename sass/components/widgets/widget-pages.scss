@@ -1,26 +1,16 @@
 // WIDGET MENU
 
 [ role= "complementary" ] {
+  margin-top: $unit-rem * 3;
+  color: $primaryColor;
 
-  display: flex;
-
-    [ class = "row" ] {
-
-      color: $primaryColor;
-
-      h2 [ class = "widgets_pages"] {
-
-        & > ul {
-          display: flex;
-          flex-direction: column;
-
-          // No need to set list-style: none; since .list-group-item is block level
-          padding-left: 0; // reset padding because ul and ol
-          margin-bottom: 0;
-        }
-        [ class = "widgettitle" ] {
-
-        }
-      }
-    }
+  .card {
+    border: 0px;
+    margin-bottom: $unit-rem * 1;
+  }
+    & ul {
+    list-style: none;
+    padding-left: 0; // reset padding because ul and ol
+    margin-bottom: 0;
+  }
 }

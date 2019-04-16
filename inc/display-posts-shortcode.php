@@ -497,7 +497,7 @@ function be_display_posts_shortcode( $atts ) {
 			$title = '<a href="' . apply_filters( 'the_permalink', get_permalink() ) . '">' . get_the_title() . '</a>';
 
 		} elseif ( $include_title ) {
-			$title = '<span>' . get_the_title() . '</span>';
+			$title = '<a id="#'. get_the_title() .'" ></a><span>' . get_the_title() . '</span>';
 
 		} else {
 			$title = '';

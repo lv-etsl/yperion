@@ -4,3 +4,4 @@
 // @koala-prepend "popper.min.js"
 // @koala-prepend "bootstrap.js"
 // @koala-prepend "bootstrap.bundle.js"
+// @koala-prepend "stickyfill/stickyfill.min.js"
