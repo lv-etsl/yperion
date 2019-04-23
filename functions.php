@@ -14,8 +14,9 @@ include_once 'inc/class-wp-bootstrap-navwalker.php'; // walker
 //include_once 'inc/anchor-link.php';                 //
 //include_once 'inc/cannonical-remove.php';           // on enlève le cannonical
 //include_once 'inc/str-replace.php';
-include_once 'inc/quickstart-walker.php';
+//include_once 'inc/quickstart-walker.php'; //
+include_once 'inc/anchor-links-walker.php';         // on short le liens
 
 include_once 'inc/display-posts-shortcode.php';  // on shortecode
 
-include_once 'inc/register-post-type.php';               // on poste type
+//include_once 'inc/register-post-type.php';               // on poste type on passe à qtranslate -x

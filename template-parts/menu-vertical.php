@@ -8,6 +8,6 @@ wp_nav_menu(array(
     'menu_class'     => 'list-group',
     'before'         => '',
     'link_before'    => '',
-    'walker'  => new Walker_Quickstart_Menu() //use our custom walker,
+    'walker'  => new anchor_links_walker() //use our custom walker,
 ));
 ?>
