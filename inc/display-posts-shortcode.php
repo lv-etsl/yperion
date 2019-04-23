@@ -496,8 +496,9 @@ function be_display_posts_shortcode( $atts ) {
 			/** This filter is documented in wp-includes/link-template.php */
 			$title = '<a href="' . apply_filters( 'the_permalink', get_permalink() ) . '">' . get_the_title() . '</a>';
 
+		// !! On modifie l'ancre pour rajouter get_the_slug dans l'id avec #
 		} elseif ( $include_title ) {
-			$title = '<a id="#'. get_the_title() .'" ></a><span>' . get_the_title() . '</span>';
+			$title = '<a id="'. get_the_slug() .'" ></a><span>' . get_the_title() . '</span>';
 
 		} else {
 			$title = '';

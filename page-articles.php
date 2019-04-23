@@ -11,7 +11,7 @@
 
       <main class="col-sm-12 col-md-12 col-lg-8 col-xl-7" role="main">
 
-      <!-- boucle simple -->
+      <!-- boucle simple : page articles -->
       <?php if(have_posts()); ?>
       <?php while (have_posts()) : the_post(); ?>
       <!-- // -->

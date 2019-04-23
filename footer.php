@@ -3,7 +3,7 @@
           <?php dynamic_sidebar( 'footer' ); ?>
         <?php endif; ?>
         <p>
-          &copy; - <?php the_date('Y'); ?> - <?php bloginfo('name'); ?> - <?php bloginfo('descritpion'); ?>
+          &copy; - <?php the_date('Y'); ?> - <?php bloginfo('name'); ?> - <?php bloginfo('descritpion'); ?> - <?php echo pll__('Un site utilisant WordPress'); ?>
         </p>
       </footer>
 
@@ -16,7 +16,7 @@
         var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         var scrolled = (winScroll / height) * 100;
-        document.getElementById("myBar").style.width = scrolled + "%";
+        document.getElementById("progress-top").style.width = scrolled + "%";
         document.getElementById("my-progress").style.width = scrolled + "%";
       }
     </script>
