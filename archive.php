@@ -3,7 +3,7 @@
 * ARCHIVE.php : fichier pour archive
 */
  ?>
-<?php get_header(); ?>
+ <?php get_template_part( 'template-parts/header' ); ?>
 
   <div class="container-fluid">
     <div class="row">
@@ -43,4 +43,4 @@
     </div>
 </div>
 
-<?php get_footer(); ?>
+ <?php get_template_part( 'template-parts/footer' ); ?>

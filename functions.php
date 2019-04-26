@@ -11,20 +11,33 @@ include_once 'inc/reset.php';                 // reset des trucs
 include_once 'inc/enqueue.php';               // !! modif en prod : style.min.css. Rajout d'enqueue dans le head
 include_once 'inc/widgets.php';             // WIDGETS
 
+// Menu register
 include_once 'inc/register-menu.php';            // menu theme
 include_once 'inc/custom-menu.php';           // custom menu
 
 // menus
-include_once 'inc/class-wp-bootstrap-navwalker.php'; // walker
+include_once 'inc/anchor-links-walker.php';         // on short le liens
+include_once 'inc/get-slug.php';                    // on a besoin du slug pour le post short code ....
+
+// tests
+//include_once 'inc/yperion-vertical-walker.php';  // on adapte le menu pour le truc
+include_once 'inc/vertical-menu-test.php';  // on adapte le menu pour le truc
+
+// display shortcode
+include_once 'inc/display-posts-shortcode.php';     // on shortecode
+
+// traductions
+include_once 'inc/mes-traductions.php';                    // on polylang
+
+// surlignage recherche :
+include_once 'inc/search-surlignage.php';       // yep
+
+
+// menu walker pour bootstrap horizontal
+//include_once 'inc/class-wp-bootstrap-navwalker.php'; // walker
+//include_once 'inc/register-post-type.php';               // on poste type on passe à qtranslate -x
 //include_once 'inc/menu-boot-vertical.php';          // vertical
 //include_once 'inc/anchor-link.php';                 //
 //include_once 'inc/cannonical-remove.php';           // on enlève le cannonical
 //include_once 'inc/str-replace.php';
 //include_once 'inc/quickstart-walker.php'; //
-include_once 'inc/anchor-links-walker.php';         // on short le liens
-include_once 'inc/get-slug.php';                    // on a besoin du slug pour le post short code ....
-include_once 'inc/display-posts-shortcode.php';     // on shortecode
-
-include_once 'inc/mes-traductions.php';                    // on polylang
-
-//include_once 'inc/register-post-type.php';               // on poste type on passe à qtranslate -x

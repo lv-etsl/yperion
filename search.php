@@ -3,12 +3,12 @@
 * SEARCH.php : fichier pour recherche
 */
  ?>
-<?php get_header(); ?>
+<?php get_template_part( 'template-parts/header', 'search' ); ?>
 
   <div class="container-fluid">
     <div class="row">
 
-      <main class="col-sm-12 col-md-12 col-lg-8 col-xl-7" role="main">
+      <main class="col-sm-12 col-md-12 col-lg-8 col-xl-7" id="search-area" role="main">
         <header class="row">
           <h1>
             <?php echo pll__('Résultats de recherche pour:'); ?> <?php echo get_search_query(); ?>
@@ -17,7 +17,7 @@
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-          <section class="row">
+          <section class="row" >
 
             <article <?php post_class(); ?>>
               <header>
@@ -57,4 +57,4 @@
     </div>
 </div>
 
-<?php get_footer(); ?>
+ <?php get_template_part( 'template-parts/footer' ); ?>

@@ -9680,6 +9680,19 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: .5rem;
 }
 
+[role="searchform"] {
+  /* For IE10 */
+}
+[role="searchform"] select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+[role="searchform"] select::-ms-expand {
+  display: none;
+}
+
 [role="complementary"] {
   margin-top: 3rem;
   color: #f9a825 !important;
