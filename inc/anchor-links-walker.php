@@ -27,17 +27,17 @@ class anchor_links_walker extends Walker_Nav_Menu{
   $pathTab[sizeof($pathTab)-1] = '#'.$pathTab[sizeof($pathTab)-1];
   $path = implode('/',$pathTab );
 
-  $attributes .= ! empty( $item->url )        ? ' class="list-group-item list-group-item-action" href="'   . $path .'"' : '';
+  $attributes .= ! empty( $item->url )        ? ' class="list-group-item list-group-item-action article-title" href="'   . $path .'"' : '';
   $attributes .= ! empty( $item->url )        ? ' data-title="'   .   sanitize_title($item->title) .'"' : '';
   $description  = ! empty( $item->description ) ? '<span>'.esc_attr( $item->description ).'</span>' : '';
 
   if($depth != 0) $description = "";
 
   $item_output = $args->before;
-  $item_output .= '<a'. $attributes .'>';
+  $item_output .= '<div class="nav-article-title-inner"><span class="read" style="width: 0%;"></span><a'. $attributes .'>';
   $item_output .= $args->link_before .apply_filters( 'the_title', $item->title, $item->ID );
   $item_output .= $description.$args->link_after;
-  $item_output .= '</a>';
+  $item_output .= '</a></div>';
   $item_output .= $args->after;
 
   $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );

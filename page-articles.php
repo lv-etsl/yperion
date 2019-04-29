@@ -4,10 +4,12 @@
 * Description: Page template pour afficher shortcode d'articler
 */
 ?>
-<?php get_template_part( 'template-parts/header' ); ?>
+<?php get_template_part( 'template-parts/header/header' ); ?>
 
   <div class="container-fluid">
     <div class="row">
+
+<?php get_template_part( 'template-parts/sidebar/sidebar' ); ?>
 
       <main class="col-sm-12 col-md-12 col-lg-8 col-xl-7" role="main">
 
@@ -28,14 +30,12 @@
               <?php the_content(); ?>
 
           </div>
-
+          <?php get_template_part( 'template-parts/download/download', 'acf-fields' ); ?>
         <?php endwhile; ?>
 
       </main>
 
-      <?php get_sidebar(); ?>
-
     </div>
 </div><!-- container-fluid -->
 
- <?php get_template_part( 'template-parts/footer' ); ?>
+ <?php get_template_part( 'template-parts/footer/footer' ); ?>

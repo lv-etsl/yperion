@@ -1,6 +1,6 @@
 <?php
 /*
-* ARCHIVE.php : fichier pour archive
+* 404.php : fichier pour 404
 */
  ?>
  <?php get_template_part( 'template-parts/header/header' ); ?>
@@ -15,7 +15,7 @@
           <article <?php post_class('col-xs-12'); ?>>
             <header>
               <h1>
-
+                <?php echo pll__('Désolé, la page demandée n\'existe pas, n\'existe plus ou son lien a été modifié'); ?>
               </h1>
             </header>
 

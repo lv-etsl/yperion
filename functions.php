@@ -15,10 +15,11 @@ include_once 'inc/widgets.php';             // WIDGETS
 include_once 'inc/register-menu.php';            // menu theme
 include_once 'inc/custom-menu.php';           // custom menu
 
-// menus
-include_once 'inc/anchor-links-walker.php';         // on short le liens
+// The slug
 include_once 'inc/get-slug.php';                    // on a besoin du slug pour le post short code ....
 
+// menus
+include_once 'inc/anchor-links-walker.php';         // on short le liens
 // tests
 //include_once 'inc/yperion-vertical-walker.php';  // on adapte le menu pour le truc
 include_once 'inc/vertical-menu-test.php';  // on adapte le menu pour le truc
@@ -32,6 +33,8 @@ include_once 'inc/mes-traductions.php';                    // on polylang
 // surlignage recherche :
 include_once 'inc/search-surlignage.php';       // yep
 
+// breadcrumb pour éviter de se perdre :
+include_once 'inc/breadcrumb.php';       // yep
 
 // menu walker pour bootstrap horizontal
 //include_once 'inc/class-wp-bootstrap-navwalker.php'; // walker

@@ -3,10 +3,12 @@
 * SEARCH.php : fichier pour recherche
 */
  ?>
-<?php get_template_part( 'template-parts/header', 'search' ); ?>
+<?php get_template_part( 'template-parts/header/header', 'search' ); ?>
 
   <div class="container-fluid">
     <div class="row">
+
+       <?php get_template_part( 'template-parts/sidebar/sidebar' ); ?>
 
       <main class="col-sm-12 col-md-12 col-lg-8 col-xl-7" id="search-area" role="main">
         <header class="row">
@@ -40,7 +42,7 @@
 
               <p>  <?php echo pll__('Désolé, pas de résultats.'); ?></p>
 
-              <?php include_once '/template-parts/search-more.php'; ?>
+              <?php include_once '/template-parts/search/search-more.php'; ?>
 
             </div>
 
@@ -52,9 +54,7 @@
 
       </main>
 
-      <?php get_sidebar(); ?>
-
     </div>
 </div>
 
- <?php get_template_part( 'template-parts/footer' ); ?>
+ <?php get_template_part( 'template-parts/footer/footer' ); ?>

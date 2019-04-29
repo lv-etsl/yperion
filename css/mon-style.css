@@ -36,12 +36,11 @@
 
 /* section class = content */
 section.content{
-	width: 1520px;
 	max-width: 100%;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	margin: auto;
-	padding: 110px 30px;
+	padding: 0;
 }
 
 /* nav-article */
