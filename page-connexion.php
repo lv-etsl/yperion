@@ -11,7 +11,8 @@
 
        <?php get_template_part( 'template-parts/sidebar/sidebar' ); ?>
 
-      <main class="col-sm-12" role="main">
+      <main class="col-sm-12 col-md-12 col-lg-8 col-xl-7" role="main">
+
         <?php if(have_posts()); ?>
         <?php while (have_posts()) : the_post(); ?>
         <!-- // -->
@@ -27,11 +28,12 @@
 
 
             </div>
+          <div class="col">
+            <?php get_template_part('template-parts/private/private', 'login'); ?>  
+          </div>
+
 
           <?php endwhile; ?>
-        <!-- on se connecte -->
-        <?php wp_login_form(); ?>
-      <!--- // -->
 
       </main>
 

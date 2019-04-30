@@ -7,7 +7,8 @@
 <?php get_template_part( 'template-parts/header/header' ); ?>
 
   <div class="container-fluid">
-    <div class="row">
+
+      <section class="row content">
 
        <?php get_template_part( 'template-parts/sidebar/sidebar' ); ?>
 
@@ -34,8 +35,8 @@
         <?php endwhile; ?>
 
       </main>
+    </section>  <!-- // section .content -->
 
-    </div>
-</div><!-- container-fluid -->
+</div>  <!-- // container-fluid -->
 
  <?php get_template_part( 'template-parts/footer/footer' ); ?>

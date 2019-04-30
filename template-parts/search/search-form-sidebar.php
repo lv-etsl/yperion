@@ -1,12 +1,14 @@
 <div class="col-sm-12" role="searchform">
-  <form method="get" id="searchform" action="<?php bloginfo('home'); ?>" />
+  <form method="get" id="searchform" action="<?php esc_url( $_SERVER['PHP_SELF'] );  ?>" />
     <div class="form-row">
 
-      <div class="col-sm-6">
-        <input type="text" class="form-control" value="<?php the_search_query(); ?>" name="s" id="s" placeholder="<?php echo pll__('Recherche'); ?>"/>
-      </div>
-      <div class="col-sm-6">
-        <button type="submit" class="btn btn-primary"><?php echo pll__('Recherche'); ?></button>
+      <div class="row w-100 mb-3">
+        <div class="col-sm-8">
+          <input type="text" class="form-control" value="<?php the_search_query(); ?>" name="s" id="s" placeholder="<?php echo pll__('Recherche'); ?>"/>
+        </div>
+        <div class="col-sm-4">
+          <button type="submit" class="btn btn-primary"><?php echo pll__('Recherche'); ?></button>
+        </div>
       </div>
 
       <div class="input-group mb-3">

@@ -15,11 +15,15 @@ include_once 'inc/widgets.php';             // WIDGETS
 include_once 'inc/register-menu.php';            // menu theme
 include_once 'inc/custom-menu.php';           // custom menu
 
+// Mettre des Catégories / Etiquettes sur les pages
+include_once 'inc/page-with-category.php';    // cat sur page
+include_once 'inc/page-with-tag.php';    // tag sur page
+
 // The slug
 include_once 'inc/get-slug.php';                    // on a besoin du slug pour le post short code ....
 
 // menus
-include_once 'inc/anchor-links-walker.php';         // on short le liens
+include_once 'inc/anchor-links-walker-work.php';         // on short le liens
 // tests
 //include_once 'inc/yperion-vertical-walker.php';  // on adapte le menu pour le truc
 include_once 'inc/vertical-menu-test.php';  // on adapte le menu pour le truc
@@ -35,6 +39,9 @@ include_once 'inc/search-surlignage.php';       // yep
 
 // breadcrumb pour éviter de se perdre :
 include_once 'inc/breadcrumb.php';       // yep
+
+// PRIVATE: privatiser page et articles
+include_once 'inc/private-category.php';
 
 // menu walker pour bootstrap horizontal
 //include_once 'inc/class-wp-bootstrap-navwalker.php'; // walker

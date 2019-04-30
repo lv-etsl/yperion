@@ -13,5 +13,5 @@
 
   <?php wp_head(); ?>
   </head>
-  <body <?php body_class('page-template-template-referentiel'); ?> >
+  <body <?php body_class('page-template'); ?> >
 <!-- on peut rajouter banner-progress.php -->

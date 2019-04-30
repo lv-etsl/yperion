@@ -13,5 +13,6 @@
 
   <?php wp_head(); ?>
   </head>
-  <body <?php body_class(); ?> >
+  <body class="page-template" >
+    <?php get_template_part( 'template-parts/banner/banner','logout' ); ?>
     <?php get_template_part( 'template-parts/banner/banner','breadcrumb' ); ?>

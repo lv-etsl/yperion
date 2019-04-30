@@ -1,33 +1,33 @@
-.page-template-template-referentiel .content{
+.page-template .content{
 	position: relative;
 }
 
-.page-template-template-referentiel .nav-articles .read,
-.page-template-template-referentiel .nav-title,
+.page-template .nav-articles .read,
+.page-template .nav-title,
 .relations .nav-articles .read{
 	background: #60b87b;
 }
 
-.page-template-template-referentiel .nav-articles .nav-article-title .nav-article-title-inner.active,
+.page-template .nav-articles .nav-article-title .nav-article-title-inner.active,
 .relations .nav-articles .nav-article-title .nav-article-title-inner.active,
-.page-template-template-referentiel .nav-articles .nav-sub-article-title .nav-sub-article-title-inner.active,
+.page-template .nav-articles .nav-sub-article-title .nav-sub-article-title-inner.active,
 .relations .nav-articles .nav-sub-article-title .nav-sub-article-title-inner.active{
 	border-color: #60b87b;
 }
 
-.page-template-template-referentiel .pyramid-title,
+.page-template .pyramid-title,
 .pyramid-title.visible{
 	cursor: pointer;
 }
 
-.page-template-template-referentiel .pyramid-title:hover,
+.page-template .pyramid-title:hover,
 .pyramid-title.active,
 .pyramid-title.visible{
 	background-color: rgb(96, 184, 123);
 	background-color: rgba(96, 184, 123, 0.8);
 }
 
-.page-template-template-referentiel .pyramid-title:hover h4,
+.page-template .pyramid-title:hover h4,
 .pyramid-title.active h4,
 .pyramid-title.visible:hover h4{
 	color: #fff;
@@ -36,11 +36,14 @@
 
 /* section class = content */
 section.content{
-	max-width: 100%;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	margin: auto;
-	padding: 0;
+	/*
+	width: 1520px;
+	max-width: 100%;
+	padding: 110px 30px;
+	*/
 }
 
 /* nav-article */
@@ -137,15 +140,15 @@ section.content{
 	z-index: 0;
 }
 
-.page-template-template-referentiel .nav-articles .read,
-.page-template-template-referentiel .nav-title,
+.page-template .nav-articles .read,
+.page-template .nav-title,
 .relations .nav-articles .read{
 	background: #60b87b;
 }
 
-.page-template-template-referentiel .nav-articles .nav-article-title .nav-article-title-inner.active,
+.page-template .nav-articles .nav-article-title .nav-article-title-inner.active,
 .relations .nav-articles .nav-article-title .nav-article-title-inner.active,
-.page-template-template-referentiel .nav-articles .nav-sub-article-title .nav-sub-article-title-inner.active,
+.page-template .nav-articles .nav-sub-article-title .nav-sub-article-title-inner.active,
 .relations .nav-articles .nav-sub-article-title .nav-sub-article-title-inner.active{
 	border-color: #60b87b;
 }
@@ -294,7 +297,7 @@ section.content{
 }
 
 .nav-sticky{
-  width: 100%;
+  /*width: 100%;*/
   margin-left: -10px;
 }
 

@@ -8,17 +8,9 @@
       </footer>
 
   <?php wp_footer(); ?>
-    <script>
-      // pour le dev, pour prod minify avec les autres
-      window.onscroll = function() {myFunction()};
 
-      function myFunction() {
-        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        var scrolled = (winScroll / height) * 100;
-        document.getElementById("progress-top").style.width = scrolled + "%";
-        document.getElementById("my-progress").style.width = scrolled + "%";
-      }
-    </script>
+  <script src="<?php bloginfo('template_url'); ?>/js/progress/jquery.v1.12.4.js" type="text/javascript"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/progress/progress-unminify.js" data-minify="1" defer="" type="text/javascript"></script>
+
   </body>
 </html>

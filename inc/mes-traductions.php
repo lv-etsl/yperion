@@ -21,5 +21,9 @@ pll_register_string('recherche: Etiquettes', 'Etiquettes');
 // ACF champs download
 pll_register_string('Champs Download: titre document', 'Nom du fichier');
 pll_register_string('Champs Download: légende', 'Légende');
-pll_register_string('Champs Download: description', 'Descritpion');
+pll_register_string('Champs Download: description', 'Description');
 pll_register_string('Champs Download: taille du fichier', 'Taille du fichier');
+
+// Section privée
+pll_register_string('Private: bouton', 'Zone Membre');
+pll_register_string('Private: bouton', 'Déconnexion');

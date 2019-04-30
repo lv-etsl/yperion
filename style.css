@@ -9710,7 +9710,6 @@ a.text-dark:hover, a.text-dark:focus {
 [role="complementary"] .sticky {
   position: -webkit-sticky;
   position: sticky;
-  top: 5vh;
 }
 
 #my-progress {
