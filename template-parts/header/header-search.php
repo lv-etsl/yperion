@@ -34,4 +34,15 @@
   <!-- END HIGHLIGHT SEARCH with JQUERY -->
   </head>
   <body <?php body_class(); ?> >
+    
+    <?php  if(pll_current_language() == 'fr'){?>
+      <!-- fr -->
+      <?php get_template_part( 'template-parts/banner/banner','login-logout' ); ?>
+
+    <?php } else { ?>
+      <!-- de -->
+      <?php get_template_part( 'template-parts/banner/banner','login-logout-de' ); ?>
+
+      <?php } ?>
+
     <?php get_template_part( 'template-parts/banner/banner','breadcrumb' ); ?>

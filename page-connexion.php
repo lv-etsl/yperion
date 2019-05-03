@@ -20,7 +20,7 @@
             <div <?php post_class(); ?>>
               <header>
                 <h1>
-                  <?php the_title(); ?>
+                  <?php echo pll__('Page de connexion'); ?>
                 </h1>
               </header>
 
@@ -28,8 +28,18 @@
 
 
             </div>
-          <div class="col">
-            <?php get_template_part('template-parts/private/private', 'login'); ?>  
+          <div role="login-form-page">
+
+            <?php  if(pll_current_language() == 'fr'){?>
+              <!-- fr -->
+              <?php get_template_part('template-parts/private/private', 'login'); ?>
+
+            <?php } else { ?>
+              <!-- de -->
+              <?php get_template_part('template-parts/private/private', 'login-de'); ?>
+
+              <?php } ?>
+
           </div>
 
 

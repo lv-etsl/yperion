@@ -1,5 +1,20 @@
 //
 
+#_progress {
+  --scroll: 0%;
+  background: linear-gradient(
+    to right,
+    rgb(0, 143, 105) var(--scroll),
+    transparent 0
+  );
+  position: fixed;
+  width: auto;
+  height: 5px;
+  top: 0px;
+  z-index: 100;
+}
+
+// to delete
 #my-progress {
   //width: 100%;
   display: flex;

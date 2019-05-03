@@ -12,14 +12,14 @@
 @import 'abstracts/mes-variables';
 // BOOTSTRAP
 @import 'vendors/bootstrap-4.3.1/bootstrap';
-// mettre true dans variables ligne 119
+// Typo responsive mettre true dans variables ligne 119
 @import 'vendors/bootstrap-4.3.1/vendor/rfs';
 
 // LAYOUT
 @import 'layout/layout-header.scss';                // header
 @import 'layout/layout-main.scss';                  // main
 @import 'layout/layout-aside.scss';                // aside
-@import 'layout/layout-search.scss';                // search
+@import 'layout/layout-search.scss';               // search
 
 // COMPONENETS
 @import 'components/widgets/widget-pages';          // widget pages
@@ -27,3 +27,4 @@
 @import 'components/menu-progress/menu-progress';   // pour faire test sur la progress banner
 
 @import 'components/menu-main/menu-main';
+@import 'components/login/login-page';              // login form

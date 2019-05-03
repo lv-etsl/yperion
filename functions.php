@@ -42,6 +42,7 @@ include_once 'inc/breadcrumb.php';       // yep
 
 // PRIVATE: privatiser page et articles
 include_once 'inc/private-category.php';
+include_once 'inc/private-admin-stop.php';
 
 // menu walker pour bootstrap horizontal
 //include_once 'inc/class-wp-bootstrap-navwalker.php'; // walker

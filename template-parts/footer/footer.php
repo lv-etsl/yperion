@@ -12,5 +12,23 @@
   <script src="<?php bloginfo('template_url'); ?>/js/progress/jquery.v1.12.4.js" type="text/javascript"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/progress/progress-unminify.js" data-minify="1" defer="" type="text/javascript"></script>
 
+    <script>
+      document.addEventListener(
+        "scroll",
+        function() {
+          var scrollTop =
+            document.documentElement["scrollTop"] || document.body["scrollTop"];
+          var scrollBottom =
+            (document.documentElement["scrollHeight"] ||
+              document.body["scrollHeight"]) - document.documentElement.clientHeight;
+          scrollPercent = scrollTop / scrollBottom * 100 + "%";
+          document
+            .getElementById("_progress")
+            .style.setProperty("--scroll", scrollPercent);
+        },
+        { passive: true }
+      );
+      </script>
+
   </body>
 </html>

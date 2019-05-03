@@ -27,3 +27,4 @@ pll_register_string('Champs Download: taille du fichier', 'Taille du fichier');
 // Section privée
 pll_register_string('Private: bouton', 'Zone Membre');
 pll_register_string('Private: bouton', 'Déconnexion');
+pll_register_string('Private: titre page', 'Page de connexion');
