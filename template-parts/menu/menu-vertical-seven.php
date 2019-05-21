@@ -4,6 +4,6 @@ wp_nav_menu(array(
     'theme_location' => 'seven',
     'container'      => false,
     'items_wrap'     => '<ul>%3$s</ul>',
-    'walker'  => new Walker_Simple_Example() //on teste des walkers,
+    //'walker'  => new Walker_Simple_Example() //on teste des walkers,
 ));
 ?>

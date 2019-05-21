@@ -11,7 +11,7 @@
 
        <?php get_template_part( 'template-parts/sidebar/sidebar' ); ?>
 
-      <main class="col-sm-12 col-md-12 col-lg-8 col-xl-7" role="main">
+      <main class="col-sm-8" role="main">
 
         <?php if(have_posts()); ?>
         <?php while (have_posts()) : the_post(); ?>

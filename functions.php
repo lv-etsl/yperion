@@ -45,7 +45,7 @@ include_once 'inc/private-category.php';
 include_once 'inc/private-admin-stop.php';
 
 // On teste des wlakers
-include_once 'inc/walker-simple-3.php';
+//include_once 'inc/walker-simple-4.php';
 
 // menu walker pour bootstrap horizontal
 //include_once 'inc/class-wp-bootstrap-navwalker.php'; // walker

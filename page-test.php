@@ -8,11 +8,13 @@
 
   <div class="container-fluid">
 
-      <section class="row content">
+    <div class="row">
+
+      <section class="content">
 
        <?php get_template_part( 'template-parts/sidebar/sidebar', 'accueil-test' ); ?>
 
-      <main class="col-sm-12 col-md-12 col-lg-8 col-xl-7" role="main">
+      <main class="col referentiel" role="main">
 
       <!-- boucle simple : page accueil -->
       <?php if(have_posts()); ?>
@@ -36,7 +38,7 @@
 
       </main>
     </section>  <!-- // section .content -->
-
+  </div>
 </div>  <!-- // container-fluid -->
 
  <?php get_template_part( 'template-parts/footer/footer' ); ?>
