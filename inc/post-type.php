@@ -4,11 +4,11 @@
 */
 
 function create_post_type() {
-  register_post_type( 'de',
+  register_post_type( 'menu_1',
     array(
       'labels' => array(
-        'name' => __( 'Page en allemand' ),
-        'singular_name' => __( 'Page en allemand' )
+        'name' => __( 'Menu du jour' ),
+        'singular_name' => __( 'le menu du jour' )
       ),
       'public' => true,
       'has_archive' => true,

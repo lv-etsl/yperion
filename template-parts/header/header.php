@@ -12,6 +12,8 @@
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/fontawesome.js" integrity="sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS" crossorigin="anonymous"></script>
 
   <?php wp_head(); ?>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#f2f2f2">
   </head>
   <body class="page-template" >
 

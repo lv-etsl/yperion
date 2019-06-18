@@ -49,7 +49,15 @@ include_once 'inc/private-admin-stop.php';
 
 // menu walker pour bootstrap horizontal
 //include_once 'inc/class-wp-bootstrap-navwalker.php'; // walker
-//include_once 'inc/register-post-type.php';               // on poste type on passe à qtranslate -x
+
+// on crée des psotes types
+include_once 'inc/register-post-type-menu-du-jour.php';
+include_once 'inc/register-post-type-boissons.php';
+
+// on teste des meta add_meta_box
+include_once 'inc/meta-box.php';
+
+
 //include_once 'inc/menu-boot-vertical.php';          // vertical
 //include_once 'inc/anchor-link.php';                 //
 //include_once 'inc/cannonical-remove.php';           // on enlève le cannonical
